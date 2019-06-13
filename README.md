@@ -115,6 +115,8 @@ Send verdict to nfqueue, for given packet id (which may be obtained from *nf_pac
 verdict may be NF_ACCEPT, NF_DROP, NF_QUEUE, NF_REPEAT or NF_STOP; please refer to Netfilter
 documentation for meaning of these values. The argument connmark should be a 32-bit unsigned value
 or -1. The latter value means that connmark is not set.
+Function returns *true* on success, *false* on failure.
+
 Note that there is currently no support for setting a packet mark, rather than a connection mark.
 Such a functionality is a potentially useful addition.
 
